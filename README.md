@@ -1,14 +1,12 @@
-# Unified 2.0 Firmware
+# Ender-3 Unified 2.0
 
-Unified Firmware 2.0 is the latest easy to use firmware for select 3D printers and boards from TH3D Studio. Both 8 bit and 32 bit based machines/boards are supported thanks to being built on **Marlin 2.0**.
-
-This firmware focuses on printers with their stock control boards and select aftermarket boards. If you have a 3rd party or other board installed in your machine that is not supported by this firmware it is recommended to use ["Vanilla" Marlin](https://marlinfw.org) on your machine.
+This is my own configuration for my Ender-3 (Creality 4.2.2) with a CRTouch (the exact same as a BLTouch in software). Please note that just becaue it works for me does NOT mean that it will work for you.
 
 ## Where to download and how to use it
 
-Always download the latest firmware releases from our Unified 2 Firmware website here: [UF2.TH3DStudio.com](http://uf2.th3dstudio.com)
+You can download the base Unified 2 firmware from [TH3D's official site](http://uf2.th3dstudio.com).
 
-This GitHub repository is for tracking code changes. We have a local script that updates the download packages on the Unified 2 Firmware website linked above.
+My configuration is in the `Firmware` folder. You can edit `Firmware/Marlin/Configuration.h` and compile it, or (**NOT RECOMMENDED**) you can check `Firmware/.pio` for my build which is **NOT** at all garunteed to work with your printer and configuration.
 
 **This is ONLY tested for use with VSCode with the PlatformIO extension. Arduino IDE is not tested or supported.**
 
@@ -19,20 +17,6 @@ For best results getting help with configuration and troubleshooting, please use
 - [TH3D Discord](http://Discord.TH3DStudio.com)
 - [TH3D Help Center](https://support.th3dstudio.com)
 - [TH3D Customer Facebook Group](http://fbgroup.th3dstudio.com/)
-
-## Versioning
-
-Any version number changes indicate a new printer addition and/or core feature change. Version numbers with letters appended (ex: 2.24a) are ones with bugfixes or additions that only affect some configurations. Read the [release notes on a release](https://github.com/th3dstudio/UnifiedFirmware/releases) for full details on what has changed between releases.
-
-## Bug Reporting
-
-If you find bugs, report them to the TH3D Studio team here:  [Contact Us](https://www.th3dstudio.com/unified-2-firmware-bug-report-form/).
-
-Issue queue is disabled because some people do not understand what a proper issue is. We have our own internal issue tracking system we use for our repo.
-
-## Something missing? ##
-
-Check the txt file called `Install Guides and STL Files.txt`.
 
 ## Credits
 
