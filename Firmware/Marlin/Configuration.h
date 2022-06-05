@@ -183,7 +183,7 @@
   * If the probe is left of the nozzle the offset on X is NEGATIVE
   * If the probe is in front of the nozzle the offset on Y is NEGATIVE
   */
-  #define NOZZLE_TO_PROBE_OFFSET { -40, 0, 0 }
+  #define NOZZLE_TO_PROBE_OFFSET { -40, 0, -4 }
 #endif
 
 
@@ -255,7 +255,7 @@
 
 // Use your own printer name - Uncomment both lines
 #define CUSTOM_PRINTER_NAME
-#define USER_PRINTER_NAME "Printer"
+#define USER_PRINTER_NAME "Ender-3"
 
 // If your printer is homing to the endstops hard uncomment this to change the homing speed/divisor to make it less aggressive.
 //#define SLOWER_HOMING
@@ -1367,7 +1367,7 @@
     #endif
     #if DISABLED(CUSTOM_PROBE)
         #define CUSTOM_PROBE
-        #define NOZZLE_TO_PROBE_OFFSET { -44, -9, 0}
+        #define NOZZLE_TO_PROBE_OFFSET { -44, -9, -4}
       #endif
     #endif  
     #if DISABLED(ENDER5_PLUS_NOABL)
@@ -1649,7 +1649,7 @@
   #define ENCODER_PULSES_PER_STEP 4
   #define ENCODER_STEPS_PER_MENU_ITEM 1
 
-  #define Z_PROBE_OFFSET_RANGE_MIN -10
+  #define Z_PROBE_OFFSET_RANGE_MIN -4
   #define Z_PROBE_OFFSET_RANGE_MAX 10
   #define EXTRUDE_MAXLENGTH 1000
   
